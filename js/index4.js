@@ -46,6 +46,21 @@ $('#myCanvas')
 		$.ajax(query);	
 	})
 
+$.ajax('http://draw.api.niamor.com/paths').done(function (lesChemins) {
+	var ctx = $('#myCanvas')[0].getContext('2d');
+	for ( i = 0 ; i < lesChemins.length; i++ ) {
+		ctx.beginPath();
+		for (j =  0; j < lesChemins[i].path.length; j++) {
+	 		ctx.lineTo(lesChemins[i].path[j][0],lesChemins[i].path[j][1]); 
+		}
+		ctx.stroke();
+	}
+
+	
+}); 
+
+	
+
 
 
 

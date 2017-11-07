@@ -7,7 +7,7 @@
 	<input type="color" id="colorPicker">
 	<input type="text" id="sizeT">
 
-	<canvas id="myCanvas" width="1000" height="650" style="border: solid black 2px"></canvas>
+	<canvas id="myCanvas" width="1000" height="600" style="border: solid black 2px"></canvas>
 
 	
 <script
